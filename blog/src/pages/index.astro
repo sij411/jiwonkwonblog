@@ -1,16 +1,28 @@
 ---
-
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
+	<head> </head>
+	<h1><a href="/">{SITE_TITLE}</a></h1>
+
+	<a href="/about/">About</a>
+	<a href="/tils/">TILs</a>
+
 	<body>
-		<h1>Astro</h1>
+		<main>
+			<!-- Posts -->
+		</main>
 	</body>
+	<footer></footer>
+
+	<style>
+		main {
+			border-left: 1px black solid;
+			border-right: 1px black solid;
+		}
+	</style>
+
+
 </html>
