@@ -1,0 +1,95 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+---
+
+<header>
+  <nav>
+    <div class="internal-links">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog/">Blog</HeaderLink>
+    </div>
+    <h2><a href="/" class="text-2xl">{SITE_TITLE}</a></h2>
+    <div class="social-links">
+      <a href="https://github.com/sij411" target="_blank">
+        <span class="sr-only"></span>
+        <svg
+          fill="#000000"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M 6 6 L 6 26 L 26 26 L 26 6 L 6 6 z"></path></svg
+        >
+      </a>
+      <a href="https://github.com/sij411" target="_blank">
+        <span class="sr-only"></span>
+        <svg
+          fill="#000000"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M 6 6 L 6 26 L 26 26 L 26 6 L 6 6 z"></path></svg
+        >
+      </a>
+      <a href="https://github.com/sij411" target="_blank">
+        <span class="sr-only">github</span>
+        <svg
+          fill="#000000"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M 6 6 L 6 26 L 26 26 L 26 6 L 6 6 z"></path></svg
+        >
+      </a>
+    </div>
+  </nav>
+</header>
+<style>
+  header {
+    margin: 0;
+    padding: 0 0.5em;
+    background: white;
+    border-bottom: 1px black solid;
+    height: 50px;
+    overflow: hidden;
+  }
+  h2 {
+    margin: 0;
+  }
+
+  h2 a,
+  h2 a.active {
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  nav a {
+    padding: 0.5em 0.5em;
+    color: var(--black);
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none;
+    filter: blur(1px);
+  }
+  .social-links,
+  .social-links a {
+    display: flex;
+  }
+
+  @media (max-width: 720px) {
+    .social-links {
+      display: none;
+    }
+  }
+</style>
