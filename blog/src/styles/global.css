@@ -5,25 +5,37 @@
  */
 
 :root {
-  --accent: #2337ff;
-  --accent-dark: #000d8a;
   --black: 15, 18, 25;
   --gray: 96, 115, 159;
   --gray-light: 229, 233, 240;
   --gray-dark: 34, 41, 57;
   --gray-gradient: rgba(var(--gray-light), 50%), #fff;
-  font-family: "Helvetica Neue", sans-serif;
 }
+
+/* Register your custom font family and tell the browser where to find it. */
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url("/fonts/HelveticaNeueMedium.otf") format("openface");
-  font-weight: 400;
+  font-family: '2049';
+  src: url('../../public/fonts/OT2049-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('../../public/fonts/OTNeueMontreal-MediumSqueezed.otf') format('otf');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif; 
+  font-size: 24px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 500; 
+  line-height: 26.4px; 
   margin: 0;
   padding: 0;
   text-align: left;
@@ -31,8 +43,7 @@ body {
   background-size: 100% 600px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  color: rgb(var(--gray-dark));
-  font-size: 20px;
+  color: black;
   line-height: 1.7;
   width: 100vw;
 }
@@ -54,16 +65,13 @@ h6 {
   line-height: 1.2;
 }
 
+a {
+  color: black;
+}
+
 strong,
 b {
   font-weight: 700;
-}
-a {
-  color: var(--accent);
-  font-size: 18px;
-}
-a:hover {
-  color: var(--accent);
 }
 p {
   margin-bottom: 1em;

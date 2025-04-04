@@ -2,18 +2,80 @@
 const today = new Date();
 ---
 
-<footer class="border-t border-black border-solid">
-  <div class="grid grid-cols-2 w-screen h-1/3 border-b border-black">
-    <div class="border-r border-black border-solid p-3">
+<footer>
+  <div class="footer-grid">
+    <div class="footer-left">
       <ul>
-        <li>Jiwon Kwon</li>
-        <li>Certified server</li>
         <li>kjiwon411@gmail.com</li>
+        <li>Jiwon Kwon</li>
+        <li>
+          <span class="black-square"
+            ><a href="https://github.com/sij411">Github</a></span
+          >
+          <span class="black-square"
+            ><a href="https://hackers.pub/@z9mb1">Hackers' Pub</a></span
+          >
+          <span class="black-square"><a>B</a></span>
+        </li>
       </ul>
     </div>
-    <div class="bg-[url('/letters.jpeg')]"></div>
-  </div>
-  <div class="text-center p-3">
-    &copy; {today.getFullYear()} 권지원. All rights reserved.
+    <div class="footer-right"></div>
   </div>
 </footer>
+
+<style>
+  footer {
+    border-top: 1px solid black;
+  }
+
+  .footer-left ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-left li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 33.33%;
+    border-bottom: 1px solid black;
+  }
+
+  .footer-left {
+    border-right: 1px solid black;
+    padding: 12px;
+  }
+
+  .footer-right {
+    background-image: url("/letters.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .black-square {
+    padding: 0;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+  }
+
+  .black-square a {
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    padding: 2px;
+    margin: 4px 2px;
+    text-decoration: none;
+  }
+</style>
