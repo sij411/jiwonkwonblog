@@ -15,7 +15,7 @@
 /* Register your custom font family and tell the browser where to find it. */
 @font-face {
   font-family: '2049';
-  src: url('../../public/fonts/OT2049-Regular.otf') format('otf');
+  src: url('/public/fonts/OT2049-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -23,14 +23,14 @@
 
 @font-face {
   font-family: 'NeueMontreal';
-  src: url('../../public/fonts/OTNeueMontreal-MediumSqueezed.otf') format('otf');
+  src: url('/public/fonts/OTNeueMontreal-MediumSemiSqueezed.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif; 
+  font-family: "NeueMontreal", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif; 
   font-size: 24px; 
   font-style: normal; 
   font-variant: normal; 
