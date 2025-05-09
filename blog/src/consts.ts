@@ -1,1 +1,1 @@
-export const SITE_TITLE = "JW Garage"
+export const SITE_TITLE = "The Garage"
